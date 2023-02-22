@@ -1,0 +1,52 @@
+.header {
+  background-color: var(--accent-color);
+  padding: 30px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo-thumb {
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__logo {
+  fill: var(--light-txt-color);
+}
+
+.header__txt {
+  width: 156px;
+  margin-left: 22px;
+  font-size: 16px;
+  line-height: 1.13;
+
+  color: var(--light-txt-color);
+}
+
+.phone-thumb {
+  display: flex;
+  align-items: center;
+
+  .header__txt {
+    margin-left: 6px;
+  }
+}
+
+.header__phone {
+  font-size: 30px;
+  line-height: 1.13;
+
+  color: var(--light-txt-color);
+}
+
+.header__social {
+  fill: var(--light-txt-color);
+
+  &:last-child {
+    margin-left: 16px;
+  }
+}
