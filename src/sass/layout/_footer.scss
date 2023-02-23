@@ -7,10 +7,15 @@
 }
 
 .footer__txt {
+  width: 290px;
   font-size: 12px;
   line-height: 1.4;
 
   color: var(--dark-txt-color);
+
+  @include desktop {
+    width: auto;
+  }
 }
 
 .footer__link {

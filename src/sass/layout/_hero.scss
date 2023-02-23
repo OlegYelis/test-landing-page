@@ -1,5 +1,9 @@
 .hero {
-  padding: 24px 0;
+  padding: 10px 0;
+
+  @include desktop {
+    padding: 24px 0;
+  }
 
   .container {
     position: relative;
@@ -7,34 +11,48 @@
 }
 
 .hero__img {
+  max-width: 100%;
   margin-bottom: 23px;
 }
 
 .img-descr {
   position: absolute;
-  top: 270px;
-  left: 212px;
+  top: 5px;
+  width: calc(100% - 20px);
+  padding: 10px 5px;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
-  width: 250px;
-  min-height: 250px;
-  border-radius: 50%;
+  border-radius: 20px;
   background-color: rgba(255, 242, 0, 0.7);
+
+  @include desktop {
+    top: 270px;
+    left: 212px;
+    width: 250px;
+    min-height: 250px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0;
+  }
 }
 
 .img-descr__title {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 15px;
   line-height: 1.16;
   text-align: center;
 
-  margin-bottom: 16px;
-
   color: var(--dark-txt-color);
+
+  @include desktop {
+    font-size: 25px;
+    margin-bottom: 16px;
+  }
 }
 
 .img-descr__txt {
@@ -42,11 +60,13 @@
   font-size: 14px;
   line-height: 1.15;
 
-  margin-bottom: 5px;
-
   text-transform: uppercase;
 
   color: var(--dark-txt-color);
+
+  @include desktop {
+    margin-bottom: 5px;
+  }
 }
 
 .img-descr__code {
@@ -71,7 +91,7 @@
 .hotel__title {
   position: relative;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 22px;
   line-height: 1.3;
 
   color: var(--dark-txt-color);
@@ -103,6 +123,10 @@
   &:focus::after {
     background: var(--secondary-accent-color);
   }
+
+  @include desktop {
+    font-size: 35px;
+  }
 }
 
 .hotel__list {
@@ -113,12 +137,24 @@
   margin-right: 20px;
 }
 
+.hero__icon {
+  width: 20px;
+
+  @include desktop {
+    width: 27px;
+  }
+}
+
 .hotel__price {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 22px;
   line-height: 1.3;
 
   color: var(--dark-txt-color);
+
+  @include desktop {
+    font-size: 35px;
+  }
 }
 
 .hotel__rating {
@@ -127,12 +163,17 @@
 }
 
 .rating__title {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.15;
   width: 101px;
 
   color: var(--dark-txt-color);
-  margin-right: 32px;
+  margin-right: 10px;
+
+  @include desktop {
+    font-size: 14px;
+    margin-right: 32px;
+  }
 }
 
 .rating__title--bold {
@@ -141,14 +182,19 @@
 
 .rating__total {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.17;
   padding: 12px 8px 12px 7px;
 
   color: var(--light-txt-color);
   background-color: var(--accent-color);
 
-  margin-right: 24px;
+  margin-right: 10px;
+
+  @include desktop {
+    font-size: 24px;
+    margin-right: 24px;
+  }
 }
 
 .rating__list {
@@ -158,17 +204,26 @@
 }
 
 .rating__item:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 10px;
+
+  @include desktop {
+    margin-right: 16px;
+  }
 }
 
 .rating__item--top {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.17;
 
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
   color: var(--dark-txt-color);
+
+  @include desktop {
+    font-size: 12px;
+    margin-right: 24px;
+  }
 }
 
 .rating__item--bottom {
@@ -184,25 +239,47 @@
 
 .hero__days {
   position: absolute;
-  right: 294px;
-  bottom: 24px;
+
+  background-color: var(--light-txt-color);
+  padding: 5px 0 0 5px;
+  border-radius: 5px 0 0 0;
+
+  right: 10px;
+  bottom: 135px;
+
+  @include desktop {
+    background-color: inherit;
+    padding: 0;
+    border-radius: 0;
+    right: 294px;
+    bottom: 24px;
+  }
 }
 
 .days__title {
   font-weight: 700;
-  font-size: 88px;
+  font-size: 25px;
   line-height: 1.16;
 
   letter-spacing: -0.05em;
   text-transform: uppercase;
 
   color: var(--secondary--txt-color);
+
+  @include desktop {
+    font-size: 88px;
+  }
 }
 
 .days__txt {
-  width: 155px;
-  font-size: 30px;
+  width: 80px;
+  font-size: 12px;
   line-height: 1.03;
 
   color: var(--dark-txt-color);
+
+  @include desktop {
+    width: 155px;
+    font-size: 30px;
+  }
 }
