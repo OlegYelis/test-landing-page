@@ -1,0 +1,26 @@
+.footer__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer__txt {
+  font-size: 12px;
+  line-height: 1.4;
+
+  color: var(--dark-txt-color);
+}
+
+.footer__link {
+  color: #0059ac;
+}
+
+.footer__social:nth-child(1) {
+  fill: #4867aa;
+}
+
+.footer__social:nth-child(2) {
+  fill: #2aabee;
+}

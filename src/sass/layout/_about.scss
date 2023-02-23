@@ -1,0 +1,146 @@
+.about {
+  padding: 24px 0;
+}
+
+.about__descr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__main {
+  max-width: 792px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.3;
+
+  color: var(--dark-txt-color);
+
+  margin-bottom: 32px;
+}
+
+.about__txt {
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: var(--dark-txt-color);
+
+  margin-bottom: 24px;
+}
+
+.about__txt--bold {
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.about__title--medium {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.3;
+
+  color: var(--dark-txt-color);
+  margin-bottom: 8px;
+}
+
+.about__txt--accent {
+  font-style: italic;
+  padding: 9px 0 9px 16px;
+  margin-left: 48px;
+  border-left: 8px solid var(--accent-color);
+}
+
+.about__title--small {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+
+  color: var(--dark-txt-color);
+  margin-bottom: 8px;
+}
+
+.about__secondary {
+  position: relative;
+  left: 40px;
+}
+
+.secondary__title {
+  font-size: 100px;
+  line-height: 1.2;
+
+  letter-spacing: -0.05em;
+  color: var(--secondary--txt-color);
+  margin-bottom: 4px;
+}
+
+.secondary__title--medium {
+  font-size: 30px;
+  line-height: 1.03;
+
+  color: var(--dark-txt-color);
+  margin-bottom: 8px;
+}
+
+.secondary__txt {
+  width: 216px;
+  font-size: 20px;
+  line-height: 1.25;
+
+  color: var(--secondary--txt-color);
+}
+
+.about__table {
+  margin-bottom: 24px;
+  width: 776px;
+
+  border-collapse: collapse;
+}
+
+.about__thead {
+  background: #f7f7f7;
+
+  th {
+    text-align: start;
+
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.1px;
+
+    color: var(--dark-txt-color);
+    padding: 20px 0 20px 13px;
+  }
+}
+
+.about__tbody {
+  td {
+    font-size: 14px;
+    line-height: 1.4;
+
+    letter-spacing: 0.1px;
+
+    color: var(--dark-txt-color);
+    padding: 20px 8px;
+  }
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid #dfdfdf;
+  }
+}
+
+.about__txt--list {
+  margin-bottom: 8px;
+}
+
+.about__list {
+  margin-left: 35px;
+
+  .about__txt:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .about__txt:last-child {
+    margin-bottom: 0;
+  }
+}
